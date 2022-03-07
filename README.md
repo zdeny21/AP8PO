@@ -1,5 +1,5 @@
 # AP8PO
-##About project
+## About project
 
 The website will serve a non-profit organization to represent their organization. Users will be able to create their own articles about the operation of the organization.
 The technologies used for developing is for FE **VueJS**, with which I already have experience from work and leisure, and **Laravel** for BE, when I also have a small experience.
@@ -10,12 +10,12 @@ The technologies used for developing is for FE **VueJS**, with which I already h
  * The Classic will have the CRUD rights to his own articles / categories.
  
 
-##Technologies
+## Technologies
  * VueJS 3
  * Laravel 9
  * MySQL
 
-##DB design
+## DB design
 ![Database design](./img/db_pic.png)
 
 ##Time plan
