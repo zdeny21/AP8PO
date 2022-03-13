@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Item;
-use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Models\category;
 
@@ -16,7 +14,8 @@ class categoryController extends Controller
      */
     public function index()
     {
-        return category::orderBy('created_at','DESC')->get();
+        return category::orderBy('title','DESC')->get();
+        //returning all categories
     }
 
     /**
@@ -38,21 +37,30 @@ class categoryController extends Controller
     public function store(Request $request)
     {
         $newCategory = new category;
-        $newCategory->title = $request->item['title'];
+        $newCategory->title = $request->category['title'];
         $newCategory->save();
 
         return $newCategory;
+        //create new category
     }
 
     /**
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return string
      */
     public function show($id)
     {
-        //
+        $existingCategory = category::find($id);
+
+        if($existingCategory) {
+            $existingCategory->get();
+            return $existingCategory;
+        }
+
+        return "category not found";
+        //show one category
     }
 
     /**
@@ -79,12 +87,13 @@ class categoryController extends Controller
 
         if ($existingCategory) {
 
-            $existingCategory->title = $request->item['name'];
+            $existingCategory->title = $request->category['title'];
             $existingCategory->save();
             return $existingCategory;
         }
 
         return "Item not found";
+        //update select category
     }
 
     /**
@@ -103,5 +112,6 @@ class categoryController extends Controller
         }
 
         return "Item not found";
+        //remove category
     }
 }
