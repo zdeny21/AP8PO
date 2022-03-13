@@ -59,7 +59,7 @@ class categoryController extends Controller
             return $existingCategory;
         }
 
-        return "category not found";
+        return "Category not found";
         //show one category
     }
 
@@ -92,7 +92,7 @@ class categoryController extends Controller
             return $existingCategory;
         }
 
-        return "Item not found";
+        return "Category not found";
         //update select category
     }
 
@@ -111,7 +111,7 @@ class categoryController extends Controller
             return "Successfully deleted!";
         }
 
-        return "Item not found";
+        return "Category not found";
         //remove category
     }
 }

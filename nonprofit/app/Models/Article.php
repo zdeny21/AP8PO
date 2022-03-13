@@ -5,10 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class category extends Model
+class Article extends Model
 {
-    //use HasFactory;
-
-    protected $table = 'category';
-    //definition of table
+    use HasFactory;
 }

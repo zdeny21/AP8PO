@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\categoryController;
+use App\Http\Controllers\userController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -26,4 +27,12 @@ Route::prefix('/category')->group( function () {
     Route::post('/store', [categoryController::class,'store']);
     Route::put('/{id}', [categoryController::class,'update']);
     Route::delete('/{id}', [categoryController::class,'destroy']);
+});
+
+Route::get('/users',[userController::class,'index']);
+Route::prefix('/user')->group( function () {
+    Route::get('/{id}', [userController::class,'show']);
+    Route::post('/store', [userController::class,'store']);
+    Route::put('/{id}', [userController::class,'update']);
+    Route::delete('/{id}', [userController::class,'destroy']);
 });
