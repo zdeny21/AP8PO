@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class userController extends Controller
@@ -15,6 +16,7 @@ class userController extends Controller
     public function index()
     {
         return User::orderBy('created_at','DESC')->get();
+        //returning all users
     }
 
     /**
@@ -45,6 +47,7 @@ class userController extends Controller
         $newUser->save();
 
         return $newUser;
+        //create new user
     }
 
     /**
@@ -62,6 +65,7 @@ class userController extends Controller
             return $existingUser;
         }
         return "User not found";
+        //show one user
     }
 
     /**
@@ -97,7 +101,7 @@ class userController extends Controller
         }
 
         return "User not found";
-        //update select category
+        //update select user
     }
 
     /**
@@ -116,5 +120,6 @@ class userController extends Controller
         }
 
         return "User not found";
+        //remove user
     }
 }
