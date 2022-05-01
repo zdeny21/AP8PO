@@ -49,3 +49,19 @@ created by [dbdiagram.io](https://dbdiagram.io/home).
     Testing + Optimalization
 ###### 10.05. - 15.05.
     Presentation
+
+## Review (26. 04. 2022)
+Me:
+It is a long journey. I think, the best way how to describe it is by the image.
+![But it is a honest work](./img/meme.jpg)
+
+
+Mikhail Larkin:
+The code is in alfa version, but is not shity code, it is a pretty clear.
+
+######Troubleshooting
+* type: npm run serve but nothing is on screen?
+* type: npm run hot 
+  * if it shows an error like "Error: listen EADDRINUSE: address already in use ::1:8080"
+  * type: killall node
+* and again: npm run hot
