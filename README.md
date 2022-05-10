@@ -16,7 +16,7 @@ The technologies used for developing is for FE **VueJS**, with which I already h
  * MySQL
 
 ## DB design
-![Database design](./img/db_pic.png)
+![Database design](./img/db_pic2.png)
 created by [dbdiagram.io](https://dbdiagram.io/home).
 
 ## Time plan
