@@ -1,12 +1,16 @@
 <template>
+    <h3>List of users</h3>
     <div v-for="user in users" :key="user.id">
-        <p> {{ user.first_name }} </p>
+        <User :user="user" />
     </div>
 </template>
 
 <script>
+import User from "./compoments/User";
+
 export default {
     name: "UserList",
+    components: { User },
     data() {
         return {
             users: [],
@@ -22,5 +26,7 @@ export default {
 </script>
 
 <style scoped>
-
+h3 {
+    margin-left: 20px;
+}
 </style>

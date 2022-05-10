@@ -1,21 +1,25 @@
 <template>
     <div>
-        <h1>hello laravel</h1>
         <UserList />
+        <ArticleList />
+        <LoginPage />
     </div>
 </template>
 
 <script>
 import UserList from "./UserList";
+import ArticleList from "./ArticleList";
+import LoginPage from "./LoginPage";
 
 export default {
     name: "App",
-    components: { UserList }
+    components: { UserList, ArticleList, LoginPage }
 }
 </script>
 
 <style scoped>
-div {
-    background: yellowgreen;
+body {
+    margin: 0;
+    background: #eee;
 }
 </style>

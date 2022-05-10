@@ -51,13 +51,24 @@ created by [dbdiagram.io](https://dbdiagram.io/home).
     Presentation
 
 ## Review (26. 04. 2022)
-Me:
+**Me:**
 It is a long journey. I think, the best way how to describe it is by the image.
 ![But it is a honest work](./img/meme.jpg)
 
 
-Mikhail Larkin:
+**Mikhail Larkin:**
 The code is in alfa version, but is not shity code, it is a pretty clear.
+
+## Final Review (10. 05. 2022)
+This project was about a small website with options line registrations, login and CRUD posts.
+First, I've created a database and backend. I used MySQL and Laravel 9.
+After that, I started working with VueJS and Bootstrap and created a frontend.
+
+One of my biggest problem was time management and understanding the Vue language.
+The language is still new for me, and it was challenging in the beginning.
+
+Now I finally have some fundamental skills with using Vue and Laravel together.
+Also, I hope, I am now more able to work with time management and prioritising the tasks.
 
 ######Troubleshooting
 * type: npm run serve but nothing is on screen?
