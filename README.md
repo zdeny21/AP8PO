@@ -70,7 +70,7 @@ The language is still new for me, and it was challenging in the beginning.
 Now I finally have some fundamental skills with using Vue and Laravel together.
 Also, I hope, I am now more able to work with time management and prioritising the tasks.
 
-######Troubleshooting
+###### Troubleshooting
 * type: npm run serve but nothing is on screen?
 * type: npm run hot 
   * if it shows an error like "Error: listen EADDRINUSE: address already in use ::1:8080"
